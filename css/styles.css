@@ -429,6 +429,7 @@ ul {
 } 
 .footer .container {
     display: flex;
+    justify-content: space-between;
 }
 .contacts {
     margin-right: 30px;
@@ -524,6 +525,56 @@ ul {
     fill: var(--secondary-color);
     color: var(--accent-color);
 }
+.contact-form-wrapper {
+    width: 570px;
+    padding-top: 74px;
+    padding-bottom: 76px;
+}
+.contact-form-block {
+    display: flex;
+}
+.contact-form-title {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--secondary-color)
+}
+.contact-form-input {
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: #2F303A;
+}
+.contact-form-input::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+}
+.contact-form-button {
+    width: 200px;
+    height: 50px;
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--secondary-color);
+}
+
 /* Список кнопок фильтра */
 .btn-list {
     display: flex;
