@@ -56,13 +56,26 @@
  <div class="backdrop">
         <form action="#" class="modal-form">
             <h2 class="modal-form-title">Оставьте свои данные, мы вам перезвоним</h2>
-            <input type="text" name="user-name" class="modal-form-input" placeholder=" " required>
-            <label for="user-name">Имя</label>
-            <input type="tel" name="user-phone" class="modal-form-input" placeholder=" " required>
-            <label for="user-phone">Телефон</label>
-            <input type="email" name="user-email" class="modal-form-input" placeholder=" " required>
-            <label for="user-email">Почта</label>
-            <textarea name="usesr-comment" placeholder="Комментарий"></textarea>
+            <button data-modal-close type="button" class="modal-form-close-btn"></button>
+            <div class="modal-form-field">
+                <input type="text" name="user-name" class="modal-form-input" placeholder=" " required>
+                <label for="user-name" class="modal-form-label">Имя</label>
+            </div>
+            <div class="modal-form-field">   
+                <input type="tel" name="user-phone" class="modal-form-input" placeholder=" " required>
+                <label for="user-phone" class="modal-form-label">Телефон</label>
+            </div>
+            <div class="modal-form-field"> 
+                <input type="email" name="user-email" class="modal-form-input" placeholder=" " required>
+                <label for="user-email" class="modal-form-label">Почта</label>
+            </div>
+            <textarea name="usesr-comment" placeholder="Комментарий" class="modal-form-comment"></textarea>
+            <label class="modal-form-option-label">
+                <input type="checkbox" name="policy" value="accept-policy" class="modal-form-checkbox">
+                <span class="modal-form-custom-checkbox"></span>
+                <span class="modal-form-option-span">Соглашаюсь с рассылкой и принимаю <a class="modal-form-link" href="">Условия договора</a></span>
+            </label>
+            <button type="submit" class="modal-form-btn modal-btn">Отправить</button>
         </form>
     </div> 
 </section>
